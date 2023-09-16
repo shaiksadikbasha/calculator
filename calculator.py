@@ -17,7 +17,7 @@ class Calculator:
 
     def add_numbers(self):
         try:
-            num1 = float(input("Enter the first number: "))
+            num1 = float(input("Enter the first number: \n"))
             num2 = float(input("Enter the second number: "))
             result = str(num1 + num2)
             print("\nThe answer is " + result)
@@ -26,7 +26,7 @@ class Calculator:
 
     def subtract_numbers(self):
         try:
-            num1 = float(input("Enter the first number: "))
+            num1 = float(input("Enter the first number: \n"))
             num2 = float(input("Enter the second number: "))
             result = str(num1 - num2)
             print("\nThe answer is " + result)
@@ -35,7 +35,7 @@ class Calculator:
 
     def multiply_numbers(self):
         try:
-            num1 = float(input("Enter the first number: "))
+            num1 = float(input("Enter the first number: \n"))
             num2 = float(input("Enter the second number: "))
             result = str(num1 * num2)
             print("\nThe answer is " + result)
@@ -44,7 +44,7 @@ class Calculator:
 
     def divide_numbers(self):
         try:
-            num1 = float(input("Enter the first number: "))
+            num1 = float(input("Enter the first number: \n"))
             num2 = float(input("Enter the second number: "))
             result = str(num1 / num2)
             print("\nThe answer is " + result)
@@ -55,7 +55,7 @@ class Calculator:
 
     def powers(self):
         try:
-            num1 = float(input("Enter the base number: "))
+            num1 = float(input("Enter the base number: \n"))
             num2 = float(input("Enter the exponent: "))
             result = str(num1 ** num2)
             print("\nThe answer is " + result)
@@ -119,7 +119,7 @@ class Calculator:
 
     def generate_random_integer(self):
         try:
-            num1 = int(input("Enter the first number: "))
+            num1 = int(input("Enter the first number: \n"))
             num2 = int(input("Enter the second number: "))
             result = str(random.randint(num1, num2))
             print("\nThe answer is " + result)
@@ -130,7 +130,7 @@ class Calculator:
         self.display_options()
 
         while True:
-            user_input = input("\nPlease input your command: ")
+            user_input = input("\nPlease input your command: \n")
 
             if user_input == "options":
                 self.display_options()
